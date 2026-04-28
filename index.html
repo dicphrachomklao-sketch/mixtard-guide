@@ -18,12 +18,12 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1);
         }
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
+        @keyframes pulse-yellow {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.7); }
+            50% { transform: scale(1.05); box-shadow: 0 0 20px 10px rgba(250, 204, 21, 0); }
         }
-        .animate-pulse-slow {
-            animation: pulse 2s infinite;
+        .animate-pulse-button {
+            animation: pulse-yellow 2s infinite;
         }
     </style>
 </head>
@@ -32,53 +32,58 @@
         <!-- Header -->
         <div class="bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 p-8 md:p-12 text-white text-center relative overflow-hidden">
             <h1 class="text-3xl md:text-5xl font-bold mb-4">วิธีการฉีดยา Mixtard®</h1>
-            <p class="text-blue-100 font-light text-lg md:text-xl">คู่มือภาพเพื่อการใช้ยาที่ถูกต้องและปลอดภัย</p>
+            <p class="text-blue-100 font-light text-lg md:text-xl mb-6">คู่มือภาพเพื่อการใช้ยาที่ถูกต้องและปลอดภัย</p>
+            
+            <!-- ปุ่มทางลัดด้านบน (Link to checklist.html) -->
+            <a href="checklist.html" class="inline-flex items-center px-6 py-3 bg-yellow-400 text-indigo-900 font-bold rounded-full shadow-lg text-sm">
+                📋 ไปหน้าเช็คลิสต์ฉีดยา
+            </a>
         </div>
 
         <div class="p-6 md:p-10 space-y-12">
             
             <!-- Step 1: Prep -->
-            <div class="step-card bg-gradient-to-br from-blue-50 to-white p-8 rounded-[1.5rem] border-l-8 border-blue-500 shadow-sm">
+            <div class="step-card bg-gradient-to-br from-blue-50 to-white p-8 rounded-[1.5rem] border-l-8 border-blue-500 shadow-sm text-lg">
                 <div class="flex items-center mb-6">
                     <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white shadow-lg mr-4 text-2xl font-bold">1</div>
-                    <h3 class="text-2xl font-semibold text-blue-900">การผสมยา</h3>
+                    <h3 class="text-2xl font-semibold text-blue-900 text-lg">การผสมยา</h3>
                 </div>
                 <div class="space-y-4">
-                    <p class="text-gray-600">คลึงในอุ้งมือ 10 ครั้ง และคว่ำขึ้น-ลงช้าๆ 10 ครั้ง จนยาขุ่นเหมือนน้ำนม</p>
+                    <p class="text-gray-600">คลึงในอุ้งมือ <span class="font-bold text-blue-600">10 ครั้ง</span> และคว่ำขึ้น-ลงช้าๆ <span class="font-bold text-blue-600">10 ครั้ง</span> จนยาขุ่นเหมือนน้ำนม</p>
                 </div>
             </div>
 
             <!-- Step 2: Air Clean -->
-            <div class="step-card bg-gradient-to-br from-indigo-50 to-white p-8 rounded-[1.5rem] border-l-8 border-indigo-500 shadow-sm">
+            <div class="step-card bg-gradient-to-br from-indigo-50 to-white p-8 rounded-[1.5rem] border-l-8 border-indigo-500 shadow-sm text-lg">
                 <div class="flex items-center mb-6">
                     <div class="w-12 h-12 bg-indigo-500 rounded-full flex items-center justify-center text-white shadow-lg mr-4 text-2xl font-bold">2</div>
-                    <h3 class="text-2xl font-semibold text-indigo-900">การไล่อากาศ</h3>
+                    <h3 class="text-2xl font-semibold text-indigo-900 text-lg">การไล่อากาศ</h3>
                 </div>
-                <p class="text-gray-600 text-lg">หมุนไปที่ <span class="font-bold text-indigo-600 text-2xl">2 u.</span> แล้วกดยาออกจนเห็นหยดน้ำยาที่ปลายเข็ม</p>
+                <p class="text-gray-600">หมุนไปที่ <span class="font-bold text-indigo-600 text-2xl">2 u.</span> แล้วกดยาออกจนเห็นหยดน้ำยาที่ปลายเข็ม</p>
             </div>
 
             <!-- Step 3: Injection -->
-            <div class="step-card bg-gradient-to-br from-emerald-50 to-white p-8 rounded-[1.5rem] border-l-8 border-emerald-500 shadow-sm">
+            <div class="step-card bg-gradient-to-br from-emerald-50 to-white p-8 rounded-[1.5rem] border-l-8 border-emerald-500 shadow-sm text-lg">
                 <div class="flex items-center mb-6">
                     <div class="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center text-white shadow-lg mr-4 text-2xl font-bold">3</div>
-                    <h3 class="text-2xl font-semibold text-emerald-900">การฉีดยา</h3>
+                    <h3 class="text-2xl font-semibold text-emerald-900 text-lg">การฉีดยา</h3>
                 </div>
-                <p class="text-gray-600">เมื่อกดยาจนสุดแล้วให้ <span class="text-emerald-700 font-bold underline text-xl">ค้างไว้ 10 วินาที</span> ก่อนถอนเข็มออก</p>
+                <p class="text-gray-600">เมื่อกดยาจนสุดแล้วให้ <span class="text-emerald-700 font-bold underline text-2xl">ค้างไว้ 10 วินาที</span> ก่อนถอนเข็มออก</p>
             </div>
 
             <!-- Important Warning -->
             <div class="p-6 bg-red-50 rounded-2xl border-2 border-red-200 text-center">
-                <p class="text-red-700 font-bold">🚨 หากใจสั่น มือสั่น หน้ามืด: ให้รีบอมลูกอมหรือดื่มน้ำหวานทันที!</p>
+                <p class="text-red-700 font-bold text-lg">🚨 หากใจสั่น มือสั่น หน้ามืด: ให้รีบอมลูกอมหรือดื่มน้ำหวานทันที!</p>
             </div>
         </div>
 
-        <!-- ***** ลิงก์ไปหน้า Checklist (ปุ่มที่หายไป) ***** -->
-        <div class="p-8 text-center bg-emerald-600">
-            <h4 class="text-white text-lg mb-4 font-bold">พร้อมฉีดยาหรือยังครับ?</h4>
-            <a href="mixtard-checklist.html" class="inline-flex items-center px-10 py-5 bg-yellow-400 hover:bg-yellow-300 text-emerald-900 text-2xl font-extrabold rounded-2xl shadow-2xl transition-all hover:scale-105 active:scale-95 animate-pulse-slow">
-                <span class="mr-3 text-3xl">📋</span> เปิดเช็คลิสต์ก่อนฉีด
+        <!-- ส่วนท้ายหน้า (Link to checklist.html) -->
+        <div class="p-10 text-center bg-indigo-900">
+            <h4 class="text-white text-xl mb-6 font-bold">ตรวจสอบความพร้อมก่อนฉีดวันนี้</h4>
+            <a href="checklist.html" class="animate-pulse-button inline-flex items-center px-12 py-6 bg-yellow-400 hover:bg-yellow-300 text-indigo-900 text-2xl font-extrabold rounded-2xl shadow-2xl transition-all hover:scale-105 active:scale-95">
+                <span class="mr-3 text-3xl">📋</span> เริ่มเช็คลิสต์ก่อนฉีด
             </a>
-            <p class="mt-4 text-emerald-100 text-sm opacity-80">คลิกที่ปุ่มสีเหลืองเพื่อเริ่มตรวจสอบขั้นตอนฉีดยาวันนี้</p>
+            <p class="mt-6 text-indigo-200 text-sm">คลิกปุ่มสีเหลืองเพื่อบันทึกการฉีดของคุณ</p>
         </div>
     </div>
 </body>
