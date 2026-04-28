@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คู่มือการฉีดยา Mixtard Penfill</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #f8fafc;
+        }
+        .step-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1);
+        }
+        .anatomy-badge {
+            @apply flex flex-col items-center p-3 bg-white rounded-xl shadow-sm border border-gray-100 transition-colors;
+        }
+        .anatomy-badge:hover {
+            @apply border-emerald-500 bg-emerald-50;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        .animate-pulse-slow {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-[2rem] overflow-hidden border border-blue-50">
+        <!-- Header -->
+        <div class="bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 p-8 md:p-12 text-white text-center relative overflow-hidden">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">วิธีการฉีดยา Mixtard®</h1>
+            <p class="text-blue-100 font-light text-lg md:text-xl">คู่มือภาพอัจฉริยะ เพื่อการใช้ยาที่ถูกต้องและปลอดภัย</p>
+        </div>
+
+        <div class="p-6 md:p-10 space-y-12">
+            
+            <!-- Step 1: Prep -->
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="step-card bg-gradient-to-br from-blue-50 to-white p-8 rounded-[1.5rem] border-l-8 border-blue-500 shadow-sm">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white shadow-lg mr-4 text-2xl font-bold">1</div>
+                        <h3 class="text-2xl font-semibold text-blue-900">การผสมยา (สำคัญมาก)</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center bg-white p-4 rounded-xl shadow-sm">
+                            <span class="text-3xl mr-4">🖐️</span>
+                            <p class="text-gray-600 font-medium">คลึงในอุ้งมือ <span class="text-blue-600 font-bold">10 ครั้ง</span></p>
+                        </div>
+                        <div class="flex items-center bg-white p-4 rounded-xl shadow-sm">
+                            <span class="text-3xl mr-4">🔄</span>
+                            <p class="text-gray-600 font-medium">คว่ำขึ้น-ลงช้าๆ <span class="text-blue-600 font-bold">10 ครั้ง</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 text-center text-blue-800 bg-blue-50 rounded-2xl border border-blue-100">
+                    <p class="text-sm italic">"ต้องแกว่งจนตัวยาเป็นเนื้อเดียวกัน สีขาวขุ่นเหมือนน้ำนม"</p>
+                </div>
+            </div>
+
+            <!-- Step 2: Air Clean -->
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="order-last md:order-first p-6 text-center text-indigo-800 bg-indigo-50 rounded-2xl border border-indigo-100">
+                    <div class="text-4xl mb-2 font-bold">2 u.</div>
+                    <p class="text-xs">ต้องเห็นหยดน้ำยาที่ปลายเข็ม</p>
+                </div>
+                <div class="step-card bg-gradient-to-br from-indigo-50 to-white p-8 rounded-[1.5rem] border-r-8 border-indigo-500 text-right shadow-sm">
+                    <div class="flex items-center justify-end mb-6">
+                        <h3 class="text-2xl font-semibold text-indigo-900">การไล่อากาศ</h3>
+                        <div class="w-12 h-12 bg-indigo-500 rounded-full flex items-center justify-center text-white shadow-lg ml-4 text-2xl font-bold">2</div>
+                    </div>
+                    <p class="text-gray-600">ปรับไปที่ 2 ยูนิต แล้วกดยาออกจนเห็นหยดน้ำที่ปลายเข็ม เพื่อให้มั่นใจว่าเข็มไม่ตัน</p>
+                </div>
+            </div>
+
+            <!-- Step 3: Injection & Sites -->
+            <div class="step-card bg-gradient-to-br from-emerald-50 to-white p-8 rounded-[2rem] border-t-8 border-emerald-500 shadow-md">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
+                    <div class="flex items-center mb-4 md:mb-0">
+                        <div class="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center text-white shadow-lg mr-4 text-2xl font-bold">3</div>
+                        <h3 class="text-2xl font-semibold text-emerald-900">ตำแหน่งการฉีด</h3>
+                    </div>
+                    <div class="bg-emerald-600 text-white px-4 py-2 rounded-full font-bold text-sm shadow-md animate-pulse-slow">
+                        📍 เปลี่ยนจุดฉีดทุกครั้ง
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    <!-- Anatomy: Abdomen -->
+                    <div class="anatomy-badge">
+                        <div class="w-16 h-16 mb-2 flex items-center justify-center bg-blue-50 rounded-full">
+                            <svg viewBox="0 0 100 100" class="w-12 h-12 text-blue-600">
+                                <path d="M30 40 Q50 30 70 40 L70 70 Q50 80 30 70 Z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="50" cy="55" r="3" fill="currentColor"/>
+                                <rect x="35" y="45" width="10" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1"/>
+                                <rect x="55" y="45" width="10" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1"/>
+                            </svg>
+                        </div>
+                        <span class="font-bold text-emerald-800">หน้าท้อง</span>
+                        <span class="text-xs text-gray-500">ห่างจากสะดือ 1 ฝ่ามือ</span>
+                    </div>
+                    <!-- Anatomy: Thigh -->
+                    <div class="anatomy-badge">
+                        <div class="w-16 h-16 mb-2 flex items-center justify-center bg-blue-50 rounded-full">
+                            <svg viewBox="0 0 100 100" class="w-12 h-12 text-blue-600">
+                                <path d="M40 20 Q50 15 60 20 L55 80 Q50 85 45 80 Z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="2"/>
+                                <rect x="45" y="30" width="10" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="1"/>
+                            </svg>
+                        </div>
+                        <span class="font-bold text-emerald-800">หน้าขา</span>
+                        <span class="text-xs text-gray-500">บริเวณด้านนอก</span>
+                    </div>
+                    <!-- Anatomy: Arm -->
+                    <div class="anatomy-badge">
+                        <div class="w-16 h-16 mb-2 flex items-center justify-center bg-blue-50 rounded-full">
+                            <svg viewBox="0 0 100 100" class="w-12 h-12 text-blue-600">
+                                <path d="M25 40 L40 20 Q50 15 60 20 L75 40 L60 80 L40 80 Z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="65" cy="45" r="5" fill="none" stroke="currentColor" stroke-width="1"/>
+                            </svg>
+                        </div>
+                        <span class="font-bold text-emerald-800">หลังต้นแขน</span>
+                        <span class="text-xs text-gray-500">เน้นส่วนที่มีไขมัน</span>
+                    </div>
+                </div>
+
+                <div class="bg-emerald-900 text-white p-6 rounded-2xl flex items-center justify-between">
+                    <div class="flex items-center">
+                        <span class="text-4xl mr-4">⏱️</span>
+                        <p class="text-lg">เมื่อกดยาจนสุดแล้วให้ <span class="text-yellow-400 font-bold">ค้างไว้</span></p>
+                    </div>
+                    <div class="text-3xl font-bold bg-white text-emerald-900 px-4 py-2 rounded-xl">10 วินาที</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Danger Zone (Icons Updated) -->
+        <div class="m-6 md:m-10 p-8 bg-red-50 rounded-[2rem] border-2 border-red-200 shadow-inner">
+            <h4 class="text-red-700 text-xl font-bold mb-8 flex items-center">
+                <span class="bg-red-600 text-white p-2 rounded-lg mr-3 shadow-md">🚨</span> อาการน้ำตาลต่ำ (ควรระวัง)
+            </h4>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Sweat/Cold -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-red-100 flex flex-col items-center text-center">
+                    <div class="w-20 h-20 bg-blue-50 rounded-full mb-4 flex items-center justify-center border-2 border-blue-200">
+                        <svg viewBox="0 0 100 100" class="w-12 h-12 text-blue-400">
+                            <path d="M50 20 C60 20 70 30 70 50 C70 70 60 85 50 85 C40 85 30 70 30 50 C30 30 40 20 50 20 Z" fill="#EBF8FF"/>
+                            <circle cx="40" cy="45" r="3" fill="#3182CE"/>
+                            <circle cx="60" cy="45" r="3" fill="#3182CE"/>
+                            <path d="M40 65 Q50 60 60 65" stroke="#3182CE" stroke-width="2" fill="none"/>
+                            <!-- Sweats -->
+                            <path d="M75 35 Q80 45 75 55" stroke="#63B3ED" stroke-width="2" fill="none"/>
+                            <path d="M25 35 Q20 45 25 55" stroke="#63B3ED" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <span class="font-bold text-gray-800 text-lg">เหงื่อออก ตัวเย็น</span>
+                </div>
+
+                <!-- Shake/Heart -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-red-100 flex flex-col items-center text-center">
+                    <div class="w-20 h-20 bg-red-50 rounded-full mb-4 flex items-center justify-center border-2 border-red-200">
+                        <svg viewBox="0 0 100 100" class="w-12 h-12 text-red-500 animate-pulse-slow">
+                            <path d="M50 80 L45 75 C30 60 20 50 20 35 C20 25 28 17 38 17 C44 17 48 20 50 23 C52 20 56 17 62 17 C72 17 80 25 80 35 C80 50 70 60 55 75 L50 80 Z" fill="currentColor" opacity="0.3"/>
+                            <path d="M10 50 L25 50 L30 40 L40 60 L45 50 L55 50 L60 40 L70 60 L75 50 L90 50" stroke="currentColor" stroke-width="3" fill="none"/>
+                        </svg>
+                    </div>
+                    <span class="font-bold text-gray-800 text-lg">มือสั่น ใจสั่น</span>
+                </div>
+
+                <!-- Candy Rescue -->
+                <div class="bg-red-600 p-6 rounded-2xl shadow-lg flex flex-col items-center text-center text-white transform scale-105">
+                    <div class="w-20 h-20 bg-white rounded-full mb-4 flex items-center justify-center shadow-inner">
+                        <svg viewBox="0 0 100 100" class="w-12 h-12 text-red-600">
+                            <rect x="30" y="35" width="40" height="30" rx="5" fill="currentColor"/>
+                            <path d="M15 30 L30 50 L15 70 Z" fill="currentColor"/>
+                            <path d="M85 30 L70 50 L85 70 Z" fill="currentColor"/>
+                            <circle cx="50" cy="50" r="15" fill="white" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <span class="font-bold text-xl">อมลูกอมทันที!</span>
+                    <span class="text-xs opacity-90 mt-1">หรือดื่มน้ำหวาน 1 แก้ว</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="bg-gray-50 p-8 border-t border-gray-100 text-center">
+            <p class="text-gray-400 text-xs">จัดทำโดย: งานเภสัชสนเทศ กลุ่มงานเภสัชกรรม โรงพยาบาลพระจอมเกล้า</p>
+        </div>
+    </div>
+</body>
+</html>
